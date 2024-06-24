@@ -4,13 +4,14 @@
  * Description: Homework 04 - ArrayListTest
  */
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
+
 import static org.junit.jupiter.api.Assertions.*;
 
-class ArrayListTest {
+public class ArrayListTest {
 
     @Test
-    void testContainsInteger() {
+    public void testContainsInteger() {
         ArrayList<Integer> al = new ArrayList<>();
         assertFalse(al.contains(5));
         al.append(4);
@@ -25,7 +26,7 @@ class ArrayListTest {
     }
 
     @Test
-    void testContainsString() {
+    public void testContainsString() {
         ArrayList<String> al = new ArrayList<>();
         assertFalse(al.contains("bla"));
         al.append("bla");
@@ -40,7 +41,7 @@ class ArrayListTest {
     }
 
     @Test
-    void testReverseInteger() {
+    public void testReverseInteger() {
         ArrayList<Integer> al = new ArrayList<>();
         al.reverse();
         assertEquals("[]", al.toString());
@@ -57,7 +58,7 @@ class ArrayListTest {
     }
 
     @Test
-    void testReverseString() {
+    public void testReverseString() {
         ArrayList<String> al = new ArrayList<>();
         al.reverse();
         assertEquals("[]", al.toString());
@@ -74,7 +75,7 @@ class ArrayListTest {
     }
 
     @Test
-    void testClearInteger() {
+    public void testClearInteger() {
         ArrayList<Integer> al = new ArrayList<>();
         al.clear();
         assertEquals("[]", al.toString());
@@ -91,7 +92,7 @@ class ArrayListTest {
     }
 
     @Test
-    void testClearString() {
+    public void testClearString() {
         ArrayList<String> al = new ArrayList<>();
         al.clear();
         assertEquals("[]", al.toString());
